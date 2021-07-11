@@ -1,0 +1,498 @@
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); 
+
+/*reset*/
+html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    background: transparent;
+ 
+    
+    --bg: #FCFCFC;
+    --bg-cards: #FCFCFC;
+    --cor-texto: #000000;
+    --cor-box: #FFFFFF;
+
+}
+
+*, body {
+    background: var(--bg);
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/*cabeçalho*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:0;
+    margin-top: 20px;
+    background: transparent;
+}
+
+header h1{
+    font-family: Ubuntu;
+    font-size: 72px;
+    font-weight: bold;
+    text-align: center;
+    color: #3071D9;
+    border-bottom: 1px solid #226ED8;
+    background: transparent;
+}
+
+header img {
+    background: transparent;
+}
+
+header ul, li, img {
+    background: transparent;
+
+}
+
+
+
+/*adicionar tarefas*/
+
+#add {
+    background: transparent;
+    margin-bottom: 25px;
+}
+
+#box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    background: transparent;
+}
+
+#box input{
+    width: 449px;
+    height: 45px;
+
+    background: var(--cor-box);
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+
+    font-family: Ubuntu;
+    font-style: italic;
+    font-size: 14px;
+    padding-left: 15px;
+    color: var(--cor-texto);
+
+    overflow-x: scroll;
+}
+
+/*botao adicionar tarefa*/
+#box #mais {
+    width: 40px;
+    height: 45px;
+    margin-left: 15px;
+    background-image: url(/assets/plus-square-solid2.png);
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+/*cards*/
+
+#add article{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+
+}
+/*card To Do*/
+#add #div1{
+    margin-top: 30px;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 9px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    height: 350px;
+    background: var(--cor-box);
+}
+
+/*card doing*/
+#add #div2{
+    margin-top: 30px;
+    margin-left: 30px;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 9px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    height: 350px;
+    background: var(--cor-box);
+}
+
+/*card done*/
+#add #div3{
+    margin-top: 30px;
+    margin-left: 30px;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 9px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    height: 350px;
+    background: var(--cor-box);
+}
+
+#add h3{
+    padding-top: 10px;
+    font-family: Roboto;
+    font-size: 36px;
+    text-align: center;
+    color: var(--cor-texto);
+    background: var(--cor-box);
+    border-bottom: 2px solid #D9D9D9;
+    width: 270px;
+    height: 48px;
+    margin: 5px auto;
+}
+
+#add table{
+    padding-top: 15px;
+    border-bottom: 1px solid #F1F0F0;
+    width: 270px; 
+    margin: 5px auto;
+    background: var(--cor-box);
+}
+
+#add tr {
+    background: var(--cor-box);
+}
+
+#add td {
+    background: var(--cor-box);
+}
+
+#add p{
+    word-wrap: break-word;
+    text-align: justify;
+    max-width: 200px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--cor-texto);
+    background: var(--cor-box);
+}
+
+#add #pDiferenciado {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    font-style: italic;
+    text-decoration: line-through;
+    color: var(--cor-texto);
+    background: var(--cor-box);
+}
+
+/*todos os botões dentro dos cards*/
+#button {
+    display: flex;
+    justify-content: flex-end;
+    background: transparent;
+}
+
+/*botao deletar*/
+#add #del{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(/assets/Deletar.png);
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+/*botao seta para trocar de card*/
+#add #seta{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(/assets/Seta.png);
+    background-color: transparent;
+} 
+
+/*botao tarefa concluida*/
+#add #check{
+    display: block;
+    width: 14px;
+    height: 14.48px;
+    background-image: url(/assets/CheckMark.png);
+    background-color: transparent;
+}
+
+/*botao retornar para a lista de tarefas*/
+#add #return{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(/assets/Return.png);
+    background-color: transparent;
+}
+
+
+
+/*configuração (engrenagem)*/
+
+#config{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#config #content{
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: var(--cor-box);
+    width: 450px;
+    height: 315px;
+    margin:  145px auto;
+    padding: 20px;
+    z-index: 3;
+}
+#config #content h1{
+    font-size: 36px;
+    font-family: Ubuntu;
+    font-style: normal;
+    text-align: center;
+    border-bottom: 2px solid #B6B6B6;
+    height: 55px;
+    margin-bottom: 33px;
+    color: var(--cor-texto);
+    background: var(--cor-box);
+}
+#config #content #h1::after{
+    content:'';
+    display: block;
+    width: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+#config #content p{
+    font-size: 22px;
+    font-family: Ubuntu;
+    padding-top:31px;
+    background-color: var(--bg-box);
+    color: var(--cor-texto);
+}
+
+/*dark mode*/
+
+.toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--cor-box);
+
+}
+
+.toggle p{
+    font-size: 22px;
+    font-family: Ubuntu;
+    padding-top: 0 !important;
+}
+
+.darkMode {
+    background: var(--cor-box);
+}
+
+.darkMode input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden; 
+}
+
+.darkMode label {
+    cursor: pointer;
+    width: 52px;
+    height: 27px;
+    background-color: #E1E1E1;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+.darkMode label::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.darkMode input:checked + label {
+    background-color: #0E0E0E;
+}
+
+.darkMode input:checked + label::after {
+    background-color: #3071D9;
+    left: 95%;
+    transform: translateX(-100%);
+}
+
+.darkMode label:active:after {
+    width: 45px;
+}
+
+/*plano de fundo*/
+
+#background {
+    position: absolute;
+    margin-top: 10px;
+
+    font-family: Ubuntu;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    width: 451px;
+    height: 43px;
+    padding: 20px auto;
+    background: var(--cor-box);
+    
+}
+
+#mudar{
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--cor-box);
+}
+
+#mudar #limpar {
+    font-family: Ubuntu;
+    font-size: 22px;
+    text-align: center;
+    color: #3071D9;
+    width: 115px;
+    height: 44px;
+    border: 1px solid #3071D9;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#mudar #adition {
+    font-family: Ubuntu;
+    font-size: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 115px;
+    height: 44px;
+    border: 1px solid #3071D9;
+    border-radius: 10px;
+    background-color: #3071D9;
+}
+
+/*cookies*/
+
+#cookies {
+    position: absolute;
+    width: 100%;
+    height: 76px;
+    border-radius: 12px 12px 0px 0px;
+    background-color: #3071D9;
+    
+}
+
+#conteudoC {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    
+}
+
+
+
+#cookies h3 {
+    position: absolute;
+    width: 432px;
+    margin-top: 20px;
+
+    font-family: Ubuntu;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+
+    color: #FFFFFF;
+
+    background-color: transparent;
+    
+}
+
+
+
+#btNao {
+    position: absolute;
+    width: 119px;
+    height: 38px;
+    margin-left: 180px;
+    margin-top: 20px;
+
+    font-family: Ubuntu;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+
+}
+
+#btSim {
+    position: absolute;
+    width: 119px;
+    height: 38px;
+    margin-left: 310px;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    
+
+    font-family: Ubuntu;
+    font-size: 14px;
+    line-height: 16px;
+    
+    
+}
+
+#close {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    margin-top: 10px;
+
+    background-image: url(/assets/X.png);
+    background-color: transparent ;
+}
+

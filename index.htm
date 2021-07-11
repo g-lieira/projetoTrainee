@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Projeto Trainee</title>
+</head>
+<body id='fundo'>
+    <!-- Header -->
+    <header>
+        <img src="assets/BlueLogo 1.png"/>
+        <h1>uTask 2.0</h1>
+        <!--<button onclick="abrirConfig()" id='imgconfig'></button>-->
+        <ul>
+            <li onclick="abrirConfig()" id='imgconfig'><img src="assets/Engrenagem.png"></li>
+            
+        </ul>
+    </header>
+
+    <!--adicionar tarefa-->
+    <section id='add'>
+
+        <div id='box'>
+                <input id='input' type="text" placeholder="Adicionar tarefa...">
+                <button onclick="deveres()" id='mais'></button>
+        </div>
+        
+
+        <article id='artigo'>
+            <div id='div1'>
+                <h3>To Do</h3>
+            </div>
+            <div id='div2'>
+                <h3>Doing</h3>
+            </div>
+            <div id='div3'>
+                <h3>Done</h3>              
+            </div>
+        </article>
+
+    </section>
+
+    <!--configurações-->
+    <section id="config" onclick="fecharConfig()">
+        <div id="content">
+            <h1>Configuração</h1>
+
+            <div class="toggle">
+                <p>Dark Mode</p>
+                <div class="darkMode">
+                    <input id="switch" type="checkbox" name="tema">
+                    <label for="switch"></label>
+                </div>
+            </div>
+
+            <p>Plano de Fundo</p>
+            <input id='background' type='url' placeholder="Link ...">
+            <div id='mudar'>
+                <button id='limpar' onclick="remove()">Limpar</button>
+                <button id='adition' onclick="adiciona()">Adicionar</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id='cookies'>
+        <div id='conteudoC'>
+
+            <div>
+                <h3>Você está de acordo com a nossa política de uso de cookies 🍪 para amplificar sua experiência no site? </h3>
+            </div>
+
+
+            <div >
+                <button id="btNao">Não concordo</button>
+                <button  id="btSim">Sim, concordo</button>
+                
+            </div>
+
+            <div>
+                <button id='close'></button>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!--Java Script-->
+    <script src="js/config.js"></script>
+    <script src="js/tasks.js"></script>
+    <script src="js/darkMode.js"></script>
+    <script src="js/fundo.js"></script>
+    <script src="js/cookies.js"></script>
+
+</body>
+</html>
