@@ -4,13 +4,10 @@ function deveres()
     const valorInput = input.value; 
     input.value = "";
 
-    
-
-
     if(valorInput != ""){
         /*card ToDo*/
         const div = document.getElementById('div1');
-
+            
         /*tabela*/
         const table = document.createElement('table');
         div.appendChild(table);
@@ -24,7 +21,6 @@ function deveres()
         tr.appendChild(td1);
 
         const p = document.createElement('p');
-        p.id = 'ptoDo';
         p.innerHTML = valorInput;
         td1.appendChild(p);
 
@@ -65,7 +61,6 @@ function deveres()
             tr2.appendChild(doingTd);
 
             const p2 = document.createElement('p');
-            p2.id = 'doing'
             p2.innerHTML = doing;
             doingTd.appendChild(p2);
 
@@ -134,10 +129,12 @@ function deveres()
             });
 
         });
-
-    }else {
-        /*nao faz nada caso nao tenha algo escrito no input*/
+    }else{
+        //nao adiciona caso nao tenha nada no input
     }
-
+    
 }
+
+
+
 

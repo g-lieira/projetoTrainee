@@ -104,7 +104,7 @@ header ul, li, img {
     width: 40px;
     height: 45px;
     margin-left: 15px;
-    background-image: url(/assets/plus-square-solid2.png);
+    background-image: url(/projetoTrainee/assets/plus-square-solid2.png);
     border-radius: 3px;
     background-color: transparent;
 }
@@ -217,7 +217,7 @@ header ul, li, img {
     display: block;
     width: 15px;
     height: 15px;
-    background-image: url(/assets/Deletar.png);
+    background-image: url(/projetoTrainee/assets/Deletar.png);
     background-color: transparent;
     margin-left: 10px;
 }
@@ -227,7 +227,7 @@ header ul, li, img {
     display: block;
     width: 15px;
     height: 15px;
-    background-image: url(/assets/Seta.png);
+    background-image: url(/projetoTrainee/assets/Seta.png);
     background-color: transparent;
 } 
 
@@ -236,7 +236,7 @@ header ul, li, img {
     display: block;
     width: 14px;
     height: 14.48px;
-    background-image: url(/assets/CheckMark.png);
+    background-image: url(/projetoTrainee/assets/CheckMark.png);
     background-color: transparent;
 }
 
@@ -245,7 +245,7 @@ header ul, li, img {
     display: block;
     width: 15px;
     height: 15px;
-    background-image: url(/assets/Return.png);
+    background-image: url(/projetoTrainee/assets/Return.png);
     background-color: transparent;
 }
 
@@ -492,7 +492,7 @@ header ul, li, img {
     height: 9px;
     margin-top: 10px;
 
-    background-image: url(/assets/X.png);
+    background-image: url(/projetoTrainee/assets/X.png);
     background-color: transparent ;
 }
 
