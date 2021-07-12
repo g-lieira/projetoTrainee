@@ -12,7 +12,7 @@ html {
     list-style: none;
     background: transparent;
  
-    
+    /*variaveis para mudar pro darkMode*/
     --bg: #FCFCFC;
     --bg-cards: #FCFCFC;
     --cor-texto: #000000;
@@ -195,6 +195,7 @@ header ul, li, img {
     background: var(--cor-box);
 }
 
+/*p do card Done*/
 #add #pDiferenciado {
     font-family: Roboto;
     font-size: 14px;
@@ -389,6 +390,7 @@ header ul, li, img {
     background: var(--cor-box);
 }
 
+/*botao para limpar*/
 #mudar #limpar {
     font-family: Ubuntu;
     font-size: 22px;
@@ -401,6 +403,7 @@ header ul, li, img {
     background-color: transparent;
 }
 
+/*botao para adicionar fundo*/
 #mudar #adition {
     font-family: Ubuntu;
     font-size: 22px;
@@ -433,8 +436,6 @@ header ul, li, img {
     
 }
 
-
-
 #cookies h3 {
     position: absolute;
     width: 432px;
@@ -451,8 +452,7 @@ header ul, li, img {
     
 }
 
-
-
+/*botao nao concordo*/
 #btNao {
     position: absolute;
     width: 119px;
@@ -470,6 +470,7 @@ header ul, li, img {
 
 }
 
+/*botao concordo*/
 #btSim {
     position: absolute;
     width: 119px;
@@ -486,6 +487,7 @@ header ul, li, img {
     
 }
 
+/*X*/
 #close {
     position: absolute;
     width: 9px;

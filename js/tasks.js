@@ -3,6 +3,14 @@
 foi armanezar os dados, mas não apareciam na tela depois, o mesmo vale
 para o darkMode e o wallpaper*/
 
+/*formato da lista
+<table>
+    <tr>
+        <td> <p> </td>
+        <td> botões </td>
+    </tr>
+</table> */
+
 function deveres()
 {
     const input = document.getElementById('input');

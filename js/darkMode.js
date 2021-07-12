@@ -10,14 +10,14 @@ const getStyle = (element, style) =>
         .getPropertyValue(style)
 
 
+/*recebe as cores do modo light*/
 const lightColors = {
     bg: getStyle(html, "--bg"),
     corBox: getStyle(html, "--cor-box"),
     corTexto: getStyle(html, "--cor-texto"),
 }
 
-
-
+//recebe novas cores
 const darkMode = {
     bg: "#232323",
     corBox: "#484E54",
