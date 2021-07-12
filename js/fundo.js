@@ -22,6 +22,7 @@ function adiciona() {
     }
 
     input.value = "";
+
 }
 
 rmv.addEventListener("click", remove())

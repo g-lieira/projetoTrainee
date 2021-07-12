@@ -1,13 +1,18 @@
+
+/*Olá gente, eu tentei colocar os cookies, porém o máximo que consegui
+foi armanezar os dados, mas não apareciam na tela depois, o mesmo vale
+para o darkMode e o wallpaper*/
+
 function deveres()
 {
     const input = document.getElementById('input');
     const valorInput = input.value; 
-    input.value = "";
+    input.value = "";      
 
     if(valorInput != ""){
         /*card ToDo*/
         const div = document.getElementById('div1');
-            
+                
         /*tabela*/
         const table = document.createElement('table');
         div.appendChild(table);
@@ -129,11 +134,17 @@ function deveres()
             });
 
         });
-    }else{
-        //nao adiciona caso nao tenha nada no input
+    
     }
+   
+        
+    
+            
     
 }
+
+
+
 
 
 
