@@ -31,11 +31,18 @@ const transformKey = key =>
 const changeColors = (colors) => {
     Object.keys(colors).map(key => 
         html.style.setProperty(transformKey(key), colors[key]) 
+        
     )
+     if(colors == darkMode){
+        const btnADD = document.getElementById("mais").style.backgroundImage = "url(/assets/plus-square-solid2.png)";
+     } else if (colors == lightColors){
+        const btnADD = document.getElementById("mais").style.backgroundImage = "url(/assets/plus-square-solid1.png)";
+     }
 }
 
 
 checkbox.addEventListener("change", ({target}) => {
     target.checked ? changeColors(darkMode) : changeColors(lightColors)
 })
+
 
